@@ -21,7 +21,5 @@ changeColorButton.addEventListener("click", (e) => {
   root.style.setProperty("--primary-color", `${primaryColorsArr[randomIdx]}`);
   root.style.setProperty(
     "--secondary-color",
-    `${secondaryColorsArr[randomIdx]}`
-  );
-
-  console.log();
+    `${secondaryColorsArr[randomIdx]}`)
+  });

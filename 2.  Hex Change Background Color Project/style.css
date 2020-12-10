@@ -1,0 +1,98 @@
+:root {
+  --primary-color: pink;
+  --secondary-color: blue;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 1.5rem;
+  min-height: 6rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  min-height: calc(100vh - 7rem);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  align-items: center;
+  transition: .3s;
+}
+
+.main__para {
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: monospace;
+  margin-bottom: 4rem;
+}
+
+.main__para--hex-1,
+.main__para--hex-2 {
+  padding: 1rem 2rem;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+}
+
+.main__para--hex-1 {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.main__para--hex-2 {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+}
+
+.change-color {
+  padding: 2rem 4rem;
+  border: 0.3rem dashed var(--secondary-color);
+  border-radius: .5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: transparent;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.change-color:focus {
+  outline: none;
+}
+
+
+
+/** TYPOGRAPHY */
+
+.header__title {
+  font-size: 4rem;
+  font-weight: bolder;
+  font-family: monospace;
+  text-transform: uppercase;
+}
